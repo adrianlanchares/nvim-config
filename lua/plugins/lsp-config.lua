@@ -21,11 +21,10 @@ return {
     },
     {
         "neovim/nvim-lspconfig",
-        
         config = function()
-            local lspconfig = vim.lsp.config
             vim.lsp.enable("lua_ls")
             vim.lsp.enable("pyright")
+            vim.lsp.enable("ruff")
         end
     }
 }
