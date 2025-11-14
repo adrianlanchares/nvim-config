@@ -8,6 +8,7 @@ return {
         scroll = { enabled = true },
         git = { enabled = true },
         lazygit = { enabled = true },
+        indent = { enabled = true },
     },
     keys = {
         { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
