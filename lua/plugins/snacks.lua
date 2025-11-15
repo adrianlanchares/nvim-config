@@ -1,17 +1,21 @@
 return {
     "folke/snacks.nvim",
-    priotiry = 1000,
-    lazy = false,
-    
     opts = {
-        explorer = { enabled = true },
-        scroll = { enabled = true },
-        git = { enabled = true },
-        lazygit = { enabled = true },
-        indent = { enabled = true },
+        notifier = { enabled = true },
+
+        picker = {
+            sources = {
+                explorer = {
+                    hidden = true,
+                    ignored = true,
+                    exclude = { ".DS_Store", "__pycache__", ".git", ".mypy_cache" },
+                }
+            }
+        }
     },
     keys = {
         { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
-        { "<leader>g", function() Snacks.lazygit() end, desc = "LazyGit" },
+        { "<leader>g", function() Snacks.lazygit() end,  desc = "LazyGit" },
+        { "<leader>n", function() Snacks.notifier() end, desc = "Notifications" },
     }
 }
