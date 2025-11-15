@@ -31,6 +31,7 @@ return {
             vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover item" })
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition " })
             vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Actions" })
+            vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, { desc = "Format Code" })
             -- Format on save if the LSP client supports it
             vim.api.nvim_create_autocmd("BufWritePre", {
                 callback = function(event)
