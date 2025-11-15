@@ -10,3 +10,6 @@ vim.cmd("set shiftwidth=4")
 
 -- sync with macos paste buffer
 vim.opt.clipboard = "unnamedplus"
+
+-- add relative line numbers
+vim.opt.relativenumber = true
