@@ -13,3 +13,5 @@ vim.opt.clipboard = "unnamedplus"
 
 -- add relative line numbers
 vim.opt.relativenumber = true
+
+-- fix doge docstrings

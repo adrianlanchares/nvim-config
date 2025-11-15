@@ -8,14 +8,7 @@ return {
 		}
 
 		vim.g.doge_doc_standard_python = "google"
-
 		vim.g.doge_enable_mappings = 1
+		vim.g.doge_mapping = "<leader>d"
 	end,
-	keys = {
-		{
-			"<leader>d",
-			"<cmd>DogeGenerate<CR>",
-			desc = "Generate Python docstring",
-		},
-	},
 }
