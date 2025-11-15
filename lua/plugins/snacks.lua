@@ -14,8 +14,8 @@ return {
         }
     },
     keys = {
-        { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
-        { "<leader>g", function() Snacks.lazygit() end,  desc = "LazyGit" },
-        { "<leader>n", function() Snacks.notifier() end, desc = "Notifications" },
+        { "<leader>e", function() Snacks.explorer() end,              desc = "File Explorer" },
+        { "<leader>g", function() Snacks.lazygit() end,               desc = "LazyGit" },
+        { "<leader>n", function() Snacks.notifier.show_history() end, desc = "Notifications" },
     }
 }
